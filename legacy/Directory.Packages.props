@@ -1,0 +1,11 @@
+<Project>
+
+  <!--
+    Scope isolation for the legacy tree.
+    Central Package Management is enabled only for the new TimeWallpaper
+    architecture via the repository root Directory.Packages.props. This file
+    stops the directory traversal, so legacy/WinDynamicDesktop keeps its own
+    package references (each with an explicit Version) and NU1008 cannot fire.
+  -->
+
+</Project>

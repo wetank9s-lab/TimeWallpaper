@@ -1,0 +1,13 @@
+<Project>
+
+  <!--
+    Scope isolation for the legacy tree.
+    MSBuild stops directory traversal at the first Directory.Build.props it
+    finds when walking up from a project file, so this file prevents the
+    repository root Directory.Build.props (Nullable, ImplicitUsings,
+    LangVersion, TreatWarningsAsErrors) from applying to
+    legacy/WinDynamicDesktop projects. WinDynamicDesktop keeps its original
+    build semantics.
+  -->
+
+</Project>
