@@ -1,0 +1,36 @@
+name: build
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  build:
+    name: Build (${{ matrix.platform }})
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [x64, ARM64]
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore TimeWallpaper.sln
+
+      # Official architectures are x64 and ARM64. Store publishing, installer
+      # publishing, and release signing are intentionally out of scope for
+      # Task 01 and are not configured here.
+      - name: Build
+        run: dotnet build TimeWallpaper.sln --configuration Release -p:Platform=${{ matrix.platform }} --no-restore
+
+      - name: Test
+        run: dotnet test TimeWallpaper.sln --configuration Release -p:Platform=${{ matrix.platform }} --no-build --no-restore

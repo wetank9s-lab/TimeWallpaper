@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Windows platform integrations. Future responsibilities include IDesktopWallpaper,
+    displays, Windows Location, system events, startup, file associations,
+    distribution channel, and secret storage. None are implemented in Task 01.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <RootNamespace>TimeWallpaper.Platform.Windows</RootNamespace>
+  </PropertyGroup>
+
+</Project>

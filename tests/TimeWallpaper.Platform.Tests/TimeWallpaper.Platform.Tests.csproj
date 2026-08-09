@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Approved V0.1 test stack: xUnit.net v3 with the Microsoft Testing Platform
+    runner (see global.json and Directory.Packages.props).
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <RootNamespace>TimeWallpaper.Platform.Tests</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+    <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
+    <!--
+      Unit tests are pure IL and must be runnable from any solution platform
+      (x64 or ARM64) on the developer's host. The official x64/ARM64 platform
+      validation is exercised by the product projects' builds; keeping test
+      assemblies AnyCPU does not change what is being tested.
+    -->
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="xunit.v3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\TimeWallpaper.Platform.Windows\TimeWallpaper.Platform.Windows.csproj" />
+  </ItemGroup>
+
+</Project>

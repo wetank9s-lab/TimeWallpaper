@@ -1,0 +1,55 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.pidb
+*.boj
+*.svd
+*.pdb
+*.cache
+*.ipch
+*.ncb
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+
+# .NET
+*.nupkg
+*.snupkg
+*.nuget.g.props
+*.nuget.g.targets
+project.lock.json
+project.fragment.lock.json
+packages/
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+
+# Publish / packaging
+publish/
+*.appx
+*.appxbundle
+*.msix
+*.msixbundle
+*.msi
+*.exe
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log

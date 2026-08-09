@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    WinUI 3 / Windows App SDK / MVVM. User interface only.
+    Task 01 establishes only the minimal startup shell; navigation and pages
+    are implemented in later tasks.
+  -->
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <RootNamespace>TimeWallpaper.App</RootNamespace>
+    <Platforms>x64;ARM64</Platforms>
+    <RuntimeIdentifiers>win-x64;win-arm64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
+    <WindowsPackageType>None</WindowsPackageType>
+    <!-- The unpackaged app provides its own Main (Program.cs). -->
+    <DefineConstants>$(DefineConstants);DISABLE_XAML_GENERATED_MAIN</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Packages required by the standard WinUI 3 project template. -->
+    <PackageReference Include="Microsoft.WindowsAppSDK" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TimeWallpaper.Core\TimeWallpaper.Core.csproj" />
+    <ProjectReference Include="..\TimeWallpaper.Themes\TimeWallpaper.Themes.csproj" />
+    <ProjectReference Include="..\TimeWallpaper.Rendering\TimeWallpaper.Rendering.csproj" />
+    <ProjectReference Include="..\TimeWallpaper.Platform.Windows\TimeWallpaper.Platform.Windows.csproj" />
+    <ProjectReference Include="..\TimeWallpaper.Content\TimeWallpaper.Content.csproj" />
+    <ProjectReference Include="..\TimeWallpaper.AI\TimeWallpaper.AI.csproj" />
+  </ItemGroup>
+
+</Project>

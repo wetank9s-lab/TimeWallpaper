@@ -1,0 +1,22 @@
+<Project>
+
+  <!--
+    Central Package Management for the Time Wallpaper solution.
+    All direct NuGet package versions are pinned here; projects reference
+    packages without Version attributes.
+  -->
+
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Packages required by the standard WinUI 3 project template. -->
+    <PackageVersion Include="Microsoft.WindowsAppSDK" Version="1.8.260710003" />
+    <PackageVersion Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.8249" />
+
+    <!-- Approved V0.1 test stack: xUnit.net v3 with the Microsoft Testing Platform runner. -->
+    <PackageVersion Include="xunit.v3" Version="3.2.2" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Optional image-generation services. Future contract: IImageGenerationProvider.
+    No provider or network code is implemented in Task 01.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>TimeWallpaper.AI</RootNamespace>
+  </PropertyGroup>
+
+</Project>

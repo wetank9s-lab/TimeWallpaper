@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Curated Desktop Poetry, Elegant English Words, Solar Terms, Holidays. No content databases yet. -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>TimeWallpaper.Content</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TimeWallpaper.Core\TimeWallpaper.Core.csproj" />
+  </ItemGroup>
+
+</Project>

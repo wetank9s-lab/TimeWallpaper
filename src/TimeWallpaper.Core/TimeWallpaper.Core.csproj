@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Platform-independent domain/business logic.
+    Must never reference WinUI, Windows Registry, COM, Windows.Devices.Geolocation,
+    Microsoft Store APIs, TimeWallpaper.App, or TimeWallpaper.Agent.
+  -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>TimeWallpaper.Core</RootNamespace>
+  </PropertyGroup>
+
+</Project>

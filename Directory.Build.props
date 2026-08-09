@@ -1,0 +1,28 @@
+<Project>
+
+  <!--
+    Central build settings for the Time Wallpaper solution (Task 01).
+    These apply to every project under this repository root, including the
+    legacy WinDynamicDesktop tree once it is added under legacy/.
+  -->
+
+  <PropertyGroup>
+    <!-- Consistent language feature set across new projects. -->
+    <LangVersion>latest</LangVersion>
+
+    <!-- Nullable reference types are required for all new Time Wallpaper projects. -->
+    <Nullable>enable</Nullable>
+
+    <!-- One consistent, solution-wide implicit usings policy. -->
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!--
+      TreatWarningsAsErrors is intentionally NOT enabled repository-wide:
+      the legacy WinDynamicDesktop tree will be added under legacy/ and must
+      keep building without being broken by warning-level strictness.
+      New Time Wallpaper projects may opt in individually later if desired.
+    -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+</Project>

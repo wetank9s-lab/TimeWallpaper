@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- .twtheme, ThemeDefinition, validation, install/update/remove, WDD importer, Theme Store metadata. -->
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <RootNamespace>TimeWallpaper.Themes</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TimeWallpaper.Core\TimeWallpaper.Core.csproj" />
+  </ItemGroup>
+
+</Project>
