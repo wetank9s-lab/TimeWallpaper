@@ -1,6 +1,6 @@
 # Time Wallpaper / 时辰壁纸 — V0.1 Documentation Pack
 
-本目录整理了当前已经冻结的 V0.1 产品、架构、UI、AI 与发布规范，可直接提交到 GitHub 仓库。
+本目录整理了当前已经冻结的 V0.1 产品、架构、UI、AI 与发布规范。
 
 ## 产品定位
 
