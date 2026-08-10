@@ -83,15 +83,3 @@ docs/
 10. AI Dynamic
 11. Distribution / Release Hardening
 
-## Important
-
-This documentation is intentionally strict.
-
-When implementing with DeepSeek or another coding model:
-
-- do not invent missing product behavior;
-- do not add NuGet packages without approval;
-- do not merge App and Agent;
-- do not introduce hidden polling;
-- do not add telemetry;
-- report `SPEC GAP` when the frozen documents do not define a required behavior.
